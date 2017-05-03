@@ -47,6 +47,10 @@ export default {
     search:{
       handler:function(val,oldVal){
         console.log(val,oldVal);
+        var currSearch={
+          "searchMsg":val
+        }
+        Store.save(currSearch);
       },
       deep:true
     }
